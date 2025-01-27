@@ -169,10 +169,14 @@ main {
 }
 
 .container .profile-data .repositories ul li a .repo-data{
-  min-width: 280px;
+  min-width: 250px;
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.container .profile-data .repositories ul li a .repo-data .language{
+  min-width: 100px;
 }
 
 .container .profile-data .repositories ul li a .repo-data span {
