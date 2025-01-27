@@ -4,7 +4,7 @@ async function getEvents(userName) {
     const response = await fetch(`${baseUrl}/${userName}/events`)
     const array = await response.json()
 
-    const lista = []
+    let lista = []
 
     array.forEach((index) => {
         if (lista.length < eventsQuantity && (index.type === 'PushEvent' || index.type === 'CreateEvent')) {
