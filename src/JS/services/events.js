@@ -4,8 +4,6 @@ async function getEvents(userName) {
     const response = await fetch(`${baseUrl}/${userName}/events`)
     const array = await response.json()
 
-    console.log(array)
-
     let lista = []
 
     array.forEach((index) => {
