@@ -201,6 +201,7 @@ main {
   transition: 0.3s ease-in-out;
 }
 
+
 .container .profile-data .repositories ul li a:hover .repo-data span{
   color: black;
   background-color: var(--cor-branca-padrao);
@@ -262,6 +263,10 @@ main {
 .container .profile-data .events ul li{
   font-size: 95%;
   margin: 4px 0px;
+}
+
+.container .profile-data .repositories ul li a .repo-data{
+  min-width: 160px;
 }
 
 .container .profile-data .events ul li span {
