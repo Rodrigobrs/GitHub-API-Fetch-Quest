@@ -14,7 +14,7 @@ const screen = {
 
         let repositoriesItens = ""
 
-        user.repositories.forEach(repo => repositoriesItens +=`<li><a href="${repo.html_url}" target="_blank" >${repo.name}<div class="repo-data"><span>🍴${repo.forks_count}</span><span>🌟${repo.stargazers_count}</span><span>👁️‍🗨️${repo.watchers_count}</span><span class="language">💻${repo.language ?? '?'}</span></div></a></li>` )
+        user.repositories.forEach(repo => repositoriesItens +=`<li><a href="${repo.html_url}" target="_blank" >${repo.name}<div class="repo-data"><span>🍴${repo.forks_count === 0 ? 'Sem forks':repo.forks_count}</span><span>🌟${repo.stargazers_count === 0 ? 'Sem estrelas':repo.stargazers_count}</span><span>👁️‍🗨️${repo.watchers_count === 0 ? 'Sem visualizações':repo.watchers_count}</span><span class="language">💻${repo.language ?? 'Sem linguagem'}</span></div></a></li>`)
 
         if(user.repositories.length > 0){
             this.userProfile.innerHTML += `
